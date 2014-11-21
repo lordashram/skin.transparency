@@ -2167,7 +2167,7 @@
 					</control>
 					<control type="radiobutton" id="8110">
 						<description>Menu Videos Sub Custom9</description>
-						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_Videos_Sub_Custom9_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 1$INFO[Skin.String(Menu_Videos_Sub_Custom9.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,9)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom9)</onclick>
@@ -2176,7 +2176,7 @@
 					</control>
 					<control type="radiobutton" id="8111">
 						<description>Menu Videos Sub Custom10</description>
-						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_Videos_Sub_Custom10_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 2$INFO[Skin.String(Menu_Videos_Sub_Custom10.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,10)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom10)</onclick>
@@ -2185,7 +2185,7 @@
 					</control>
 					<control type="radiobutton" id="8112">
 						<description>Menu Videos Sub Custom11</description>
-						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_Videos_Sub_Custom11_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 3$INFO[Skin.String(Menu_Videos_Sub_Custom11.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,11)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom11)</onclick>
@@ -2194,7 +2194,7 @@
 					</control>
 					<control type="radiobutton" id="8113">
 						<description>Menu Videos Sub Custom12</description>
-						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_Videos_Sub_Custom12_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 4$INFO[Skin.String(Menu_Videos_Sub_Custom12.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,12)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom12)</onclick>
@@ -2203,7 +2203,7 @@
 					</control>
 					<control type="radiobutton" id="8114">
 						<description>Menu Videos Sub Custom13</description>
-						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_Videos_Sub_Custom13_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 5$INFO[Skin.String(Menu_Videos_Sub_Custom13.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,13)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom13)</onclick>
@@ -2212,7 +2212,7 @@
 					</control>
 					<control type="radiobutton" id="8115">
 						<description>Menu Videos Sub Custom14</description>
-						<label>[B]$LOCALIZE[24000] 6$INFO[Skin.String(Menu_Videos_Sub_Custom14_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 6$INFO[Skin.String(Menu_Videos_Sub_Custom14.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,14)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom14)</onclick>
@@ -2221,7 +2221,7 @@
 					</control>
 					<control type="radiobutton" id="8116">
 						<description>Menu Videos Sub Custom15</description>
-						<label>[B]$LOCALIZE[24000] 7$INFO[Skin.String(Menu_Videos_Sub_Custom15_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 7$INFO[Skin.String(Menu_Videos_Sub_Custom15.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,15)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom15)</onclick>
@@ -2230,7 +2230,7 @@
 					</control>
 					<control type="radiobutton" id="8117">
 						<description>Menu Videos Sub Custom16</description>
-						<label>[B]$LOCALIZE[24000] 8$INFO[Skin.String(Menu_Videos_Sub_Custom16_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[24000] 8$INFO[Skin.String(Menu_Videos_Sub_Custom16.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(VideosCustom,16)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Videos_Sub_Custom16)</onclick>
@@ -2444,7 +2444,7 @@
 					</control>
 					<control type="radiobutton" id="8122">
 						<description>Menu Movies Sub Custom9</description>
-						<label>[B]$LOCALIZE[20334] 1$INFO[Skin.String(Menu_Movies_Sub_Custom9_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[20334] 1$INFO[Skin.String(Menu_Movies_Sub_Custom9.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,9)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom9)</onclick>
@@ -2453,7 +2453,7 @@
 					</control>
 					<control type="radiobutton" id="8123">
 						<description>Menu Movies Sub Custom10</description>
-						<label>[B]$LOCALIZE[20334] 2$INFO[Skin.String(Menu_Movies_Sub_Custom10_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[20334] 2$INFO[Skin.String(Menu_Movies_Sub_Custom10.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,10)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom10)</onclick>
@@ -2462,7 +2462,7 @@
 					</control>
 					<control type="radiobutton" id="8124">
 						<description>Menu Movies Sub Custom11</description>
-						<label>[B]$LOCALIZE[20334] 3$INFO[Skin.String(Menu_Movies_Sub_Custom11_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[20334] 3$INFO[Skin.String(Menu_Movies_Sub_Custom11.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MoviesCustom,11)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_Movies_Sub_Custom11)</onclick>
@@ -2631,7 +2631,7 @@
 					</control>
 					<control type="radiobutton" id="8117">
 						<description>Menu TVShows Sub Custom9</description>
-						<label>[B]$LOCALIZE[31156] 4$INFO[Skin.String(Menu_TVShows_Sub_Custom9_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31156] 4$INFO[Skin.String(Menu_TVShows_Sub_Custom9.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,9)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom9)</onclick>
@@ -2640,7 +2640,7 @@
 					</control>
 					<control type="radiobutton" id="8118">
 						<description>Menu TVShows Sub Custom10</description>
-						<label>[B]$LOCALIZE[31156] 5$INFO[Skin.String(Menu_TVShows_Sub_Custom10_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31156] 5$INFO[Skin.String(Menu_TVShows_Sub_Custom10.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,10)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom10)</onclick>
@@ -2649,7 +2649,7 @@
 					</control>
 					<control type="radiobutton" id="8119">
 						<description>Menu TVShows Sub Custom11</description>
-						<label>[B]$LOCALIZE[31156] 6$INFO[Skin.String(Menu_TVShows_Sub_Custom11_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31156] 6$INFO[Skin.String(Menu_TVShows_Sub_Custom11.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(TVShowsCustom,11)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_TVShows_Sub_Custom11)</onclick>
@@ -2827,7 +2827,7 @@
 					</control>
 					<control type="radiobutton" id="8118">
 						<description>Menu MusicVideos Sub Custom9</description>
-						<label>[B]$LOCALIZE[31156] 4$INFO[Skin.String(Menu_MusicVideos_Sub_Custom9_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31156] 4$INFO[Skin.String(Menu_MusicVideos_Sub_Custom9.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,9)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom9)</onclick>
@@ -2836,7 +2836,7 @@
 					</control>
 					<control type="radiobutton" id="8119">
 						<description>Menu MusicVideos Sub Custom10</description>
-						<label>[B]$LOCALIZE[31156] 5$INFO[Skin.String(Menu_MusicVideos_Sub_Custom10_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31156] 5$INFO[Skin.String(Menu_MusicVideos_Sub_Custom10.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,10)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom10)</onclick>
@@ -2845,7 +2845,7 @@
 					</control>
 					<control type="radiobutton" id="8120">
 						<description>Menu MusicVideos Sub Custom11</description>
-						<label>[B]$LOCALIZE[31156] 6$INFO[Skin.String(Menu_MusicVideos_Sub_Custom11_Label), - ][/B]</label>
+						<label>[B]$LOCALIZE[31156] 6$INFO[Skin.String(Menu_MusicVideos_Sub_Custom11.Label), - ][/B]</label>
 						<include>ButtonMenuSettings2</include>
 						<onfocus>Skin.SetString(MusicVideosCustom,11)</onfocus>
 						<onclick>Skin.ToggleSetting(Menu_MusicVideos_Sub_Custom11)</onclick>
