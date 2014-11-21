@@ -4225,7 +4225,7 @@
 		<onleft>5040</onleft>
 		<onright>5050</onright>
 		<focusposition>0</focusposition>
-		<movement>7</movement>
+		<movement>10</movement>
 		<include condition="!Skin.HasSetting(WideHomeMenu)">VerticalSubMenuLayoutAnim</include>
 		<include condition="Skin.HasSetting(WideHomeMenu)">VerticalSubMenuLayoutAnimWide</include>
 		<animation effect="fade" start="0" end="100" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
