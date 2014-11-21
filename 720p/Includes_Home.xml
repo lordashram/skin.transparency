@@ -2907,6 +2907,54 @@
 					<onclick>$INFO[Skin.String(Menu_Videos_Sub_Custom8.Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom8)</visible>
 				</item>
+				<item id="8110">
+					<description>Menu Videos Sub Custom9</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom9_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom9_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom9)</visible>
+				</item>
+				<item id="8111">
+					<description>Menu Videos Sub Custom10</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom10_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom10_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom10)</visible>
+				</item>
+				<item id="8112">
+					<description>Menu Videos Sub Custom11</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom11_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom11_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom11)</visible>
+				</item>
+				<item id="8113">
+					<description>Menu Videos Sub Custom12</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom12_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom12_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom12)</visible>
+				</item>
+				<item id="8114">
+					<description>Menu Videos Sub Custom13</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom13_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom13_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom13)</visible>
+				</item>
+				<item id="8115">
+					<description>Menu Videos Sub Custom14</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom14_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom14_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom14)</visible>
+				</item>
+				<item id="8116">
+					<description>Menu Videos Sub Custom15</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom15_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom15_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom15)</visible>
+				</item>
+				<item id="8117">
+					<description>Menu Videos Sub Custom16</description>
+					<label>$INFO[Skin.String(Menu_Videos_Sub_Custom16_Label)]</label>
+					<onclick>RunAddon($INFO[Skin.String(Menu_Videos_Sub_Custom16_Path)])</onclick>
+					<visible>Skin.HasSetting(Menu_Videos_Sub_Custom16)</visible>
+				</item>
 			</content>
 		</control>
 	</include>
