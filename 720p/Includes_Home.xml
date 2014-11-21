@@ -3332,6 +3332,24 @@
 					<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom8.Path)]</onclick>
 					<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom8)</visible>
 				</item>
+				<item id="8118">
+					<description>Menu MusicVideos Sub Custom9</description>
+					<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom9.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom9.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom9)</visible>
+				</item>
+				<item id="8119">
+					<description>Menu MusicVideos Sub Custom10</description>
+					<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom10.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom10.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom10)</visible>
+				</item>
+				<item id="8120">
+					<description>Menu MusicVideos Sub Custom11</description>
+					<label>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom11.Label)]</label>
+					<onclick>$INFO[Skin.String(Menu_MusicVideos_Sub_Custom11.Path)]</onclick>
+					<visible>Skin.HasSetting(Menu_MusicVideos_Sub_Custom11)</visible>
+				</item>
 			</content>
 		</control>
 	</include>
