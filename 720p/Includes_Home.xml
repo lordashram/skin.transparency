@@ -4189,9 +4189,9 @@
 		<include condition="Skin.HasSetting(HateTransparency)">T-Home_Ver_Sub</include>
 		<control type="image">
 			<posx>199</posx>
-			<posy>219</posy>
-			<width>210</width>
-			<height>280</height>
+			<posy>176</posy>
+			<width>260</width>
+			<height>320</height>
 			<texture border="0,30,30,30">submenu-ver.png</texture>
 			<include condition="!Skin.HasSetting(WideHomeMenu)">VerticalSubMenuButtonAnim</include>
 			<include condition="Skin.HasSetting(WideHomeMenu)">VerticalSubMenuButtonAnimWide</include>
@@ -4216,10 +4216,10 @@
 	<include name="VerticalSubMenuLayout">
 		<orientation>vertical</orientation>
 		<posx>199</posx>
-		<posy>248</posy>
-		<width>200</width>
-		<height>242</height>
-		<hitrect x="170" y="0" w="250" h="720"/>
+		<posy>214</posy>
+		<width>250</width>
+		<height>302</height>
+		<hitrect x="220" y="0" w="300" h="720"/>
 		<onup>8001</onup>
 		<ondown>8001</ondown>
 		<onleft>5040</onleft>
@@ -4230,18 +4230,18 @@
 		<include condition="Skin.HasSetting(WideHomeMenu)">VerticalSubMenuLayoutAnimWide</include>
 		<animation effect="fade" start="0" end="100" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 		<animation effect="slide" start="0,0" end="50,0" time="0" condition="Skin.HasSetting(WideHomeMenu)">Conditional</animation>
-		<itemlayout width="198" height="30">
+		<itemlayout width="248" height="30">
 			<control type="image">
 				<posx>15</posx>
 				<posy>0</posy>
-				<width>170</width>
+				<width>220</width>
 				<height>32</height>
 				<texture border="3">submenu-ver-button.png</texture>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>25</posx>
 				<posy>0</posy>
-				<width>200</width>
+				<width>250</width>
 				<height>30</height>
 				<font>font-18</font>
 				<textcolor>white</textcolor>
@@ -4253,26 +4253,26 @@
 				<label>[UPPERCASE][B]$INFO[ListItem.Label][/B][/UPPERCASE]</label>
 			</control>
 		</itemlayout>
-		<focusedlayout width="198" height="30">
+		<focusedlayout width="248" height="30">
 			<control type="image">
 				<posx>15</posx>
 				<posy>0</posy>
-				<width>170</width>
+				<width>220</width>
 				<height>32</height>
 				<texture border="3">submenu-ver-button.png</texture>
 			</control>
 			<control type="image">
 				<posx>15</posx>
 				<posy>0</posy>
-				<width>170</width>
+				<width>220</width>
 				<height>32</height>
 				<texture border="7">list-focus2.png</texture>
 				<animation effect="fade" start="30" end="60" time="750" pulse="true" condition="true">Conditional</animation>
 			</control>
 			<control type="label">
-				<posx>0</posx>
+				<posx>25</posx>
 				<posy>0</posy>
-				<width>200</width>
+				<width>250</width>
 				<height>30</height>
 				<font>font-18</font>
 				<textcolor>blue</textcolor>
@@ -4353,18 +4353,18 @@
 		</focusedlayout>
 	</include>
 	<include name="VerticalSubMenuButtonAnim">
-		<animation effect="zoom" start="199,219,1,288" end="199,219,210,288" time="200">Visible</animation>
-		<animation effect="zoom" start="199,219,210,288" end="199,219,1,288" time="200">Hidden</animation>
+		<animation effect="zoom" start="249,219,1,352" end="249,219,260,352" time="200">Visible</animation>
+		<animation effect="zoom" start="249,219,210,352" end="249,219,1,352" time="200">Hidden</animation>
 	</include>
 	<include name="VerticalSubMenuButtonAnimWide">
-		<animation effect="zoom" start="249,219,1,288" end="249,219,210,288" time="200">Visible</animation>
-		<animation effect="zoom" start="249,219,210,288" end="249,219,1,288" time="200">Hidden</animation>
+		<animation effect="zoom" start="299,219,1,352" end="299,219,260,352" time="200">Visible</animation>
+		<animation effect="zoom" start="299,219,260,352" end="299,219,1,352" time="200">Hidden</animation>
 	</include>
 	<include name="VerticalSubMenuLayoutAnim">
-		<animation effect="zoom" start="199,248,5,242" end="199,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
+		<animation effect="zoom" start="249,248,5,306" end="249,248,250,306" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 	</include>
 	<include name="VerticalSubMenuLayoutAnimWide">
-		<animation effect="zoom" start="249,248,5,242" end="249,248,200,242" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
+		<animation effect="zoom" start="299,248,5,306" end="299,248,250,306" time="200" condition="ControlGroup(8000).HasFocus">Conditional</animation>
 	</include>
 	<include name="SearchDot">
 		<control type="image">
