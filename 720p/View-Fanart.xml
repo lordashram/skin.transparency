@@ -157,12 +157,12 @@
 					<texture background="true">$INFO[Listitem.Icon]</texture>
 					<aspectratio>keep</aspectratio>
 					<animation type="focus">
-						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="0,0" end="0,0" time="200"/>
+						<effect type="zoom" start="100" end="113" center="auto" time="200"/>
 					</animation>
 					<animation type="unfocus">
-						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="0,0" end="0,0" time="200"/>
+						<effect type="zoom" start="113" end="100" center="auto" time="200"/>
 					</animation>
 					<visible>stringcompare(ListItem.Label,..)</visible>
 				</control>
@@ -176,12 +176,12 @@
 					<bordertexture border="13">banner-shadow.png</bordertexture>
 					<bordersize>13</bordersize>
 					<animation type="focus">
-						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="113" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="0,0" end="0,0" time="200"/>
+						<effect type="zoom" start="100" end="113" center="auto" time="200"/>
 					</animation>
 					<animation type="unfocus">
-						<effect type="slide" start="0,0" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="113" end="100" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="0,0" end="0,0" time="200"/>
+						<effect type="zoom" start="113" end="100" center="auto" time="200"/>
 					</animation>
 					<visible>!stringcompare(ListItem.Label,..)</visible>
 				</control>
@@ -193,12 +193,12 @@
 					<aspectratio>keep</aspectratio>
 					<texture>$VAR[PartlyWatched]</texture>
 					<animation type="focus">
-						<effect type="slide" start="0,0" end="18,2" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="0,0" end="18,2" time="200"/>
+						<effect type="zoom" start="100" end="109" center="auto" time="200"/>
 					</animation>
 					<animation type="unfocus">
-						<effect type="slide" start="18,2" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="18,2" end="0,0" time="200"/>
+						<effect type="zoom" start="109" end="100" center="auto" time="200"/>
 					</animation>
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
@@ -210,12 +210,12 @@
 					<aspectratio>keep</aspectratio>
 					<texture>$INFO[ListItem.Overlay]</texture>
 					<animation type="focus">
-						<effect type="slide" start="0,0" end="18,2" time="200" reversible="false"/>
-						<effect type="zoom" start="100" end="109" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="0,0" end="18,2" time="200"/>
+						<effect type="zoom" start="100" end="109" center="auto" time="200"/>
 					</animation>
 					<animation type="unfocus">
-						<effect type="slide" start="18,2" end="0,0" time="200" reversible="false"/>
-						<effect type="zoom" start="109" end="100" center="auto" time="200" reversible="false"/>
+						<effect type="slide" start="18,2" end="0,0" time="200"/>
+						<effect type="zoom" start="109" end="100" center="auto" time="200"/>
 					</animation>
 					<visible>!Skin.HasSetting(Enable_TVShows_Watched_Flags)</visible>
 				</control>
@@ -421,9 +421,9 @@
 				<control type="textbox">
 					<description>Plot Value for Movies</description>
 					<posx>257</posx>
-					<posy>595</posy>
+					<posy>597</posy>
 					<width>490</width>
-					<height>62</height>
+					<height>60</height>
 					<font>font-19</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
@@ -596,9 +596,9 @@
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
 				<posx>40</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>785</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -610,9 +610,9 @@
 			<control type="textbox">
 				<description>Plot Value for TVShow</description>
 				<posx>257</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -838,9 +838,9 @@
 			<control type="textbox">
 				<description>Common Plot Value for all Content types</description>
 				<posx>317</posx>
-				<posy>568</posy>
+				<posy>570</posy>
 				<width>540</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -956,9 +956,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>247</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1025,9 +1025,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>247</posx>
-				<posy>600</posy>
+				<posy>602</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1220,9 +1220,9 @@
 			<control type="textbox">
 				<description>Description Value for Artist</description>
 				<posx>225</posx>
-				<posy>605</posy>
+				<posy>607</posy>
 				<width>636</width>
-				<height>85</height>
+				<height>83</height>
 				<font>font-19</font>
 				<align>justify</align>
 				<textcolor>white</textcolor>
@@ -1385,7 +1385,7 @@
 			<control type="label">
 				<posx>262</posx>
 				<posy>667</posy>
-				<width>613</width>
+				<width>130</width>
 				<height>30</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
@@ -1397,7 +1397,7 @@
 			<control type="label">
 				<posx>390</posx>
 				<posy>667</posy>
-				<width>613</width>
+				<width>480</width>
 				<height>30</height>
 				<font>font-20</font>
 				<textcolor>white</textcolor>
@@ -1593,9 +1593,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>225</posx>
-				<posy>605</posy>
+				<posy>607</posy>
 				<width>636</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1754,9 +1754,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>245</posx>
-				<posy>604</posy>
+				<posy>606</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -1767,9 +1767,9 @@
 			<control type="textbox">
 				<description>plot description used by addons</description>
 				<posx>245</posx>
-				<posy>604</posy>
+				<posy>606</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -2017,9 +2017,9 @@
 			<control type="textbox">
 				<description>textarea</description>
 				<posx>245</posx>
-				<posy>604</posy>
+				<posy>606</posy>
 				<width>600</width>
-				<height>85</height>
+				<height>83</height>
 				<label>$INFO[ListItem.Property(Addon.Description)]</label>
 				<font>font-19</font>
 				<align>justify</align>
@@ -2027,19 +2027,19 @@
 				<shadowcolor>black</shadowcolor>
 				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 			</control>
-			<control type="textbox">
-				<description>plot description used by addons</description>
-				<posx>245</posx>
-				<posy>604</posy>
+			<control type="label">
+				<description>textarea</description>
+				<posx>247</posx>
+				<posy>602</posy>
 				<width>600</width>
-				<height>85</height>
-				<label>$INFO[ListItem.Plot]</label>
+				<height>83</height>
+				<label>[B]$LOCALIZE[31061] $INFO[Window.Property(Updated)][/B]</label>
 				<font>font-19</font>
-				<align>justify</align>
+				<align>center</align>
+				<aligny>center</aligny>
 				<textcolor>white</textcolor>
 				<shadowcolor>black</shadowcolor>
-				<autoscroll time="3000" delay="16000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>IsEmpty(ListItem.Property(Addon.Description)) + !IsEmpty(ListItem.Plot)</visible>
+				<visible>StringCompare(ListItem.Path,addons://)</visible>
 			</control>
 		</control>
 		<control type="group">

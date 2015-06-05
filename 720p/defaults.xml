@@ -42,7 +42,6 @@
 		<posx>0</posx>
 		<posy>0</posy>
 		<texture>-</texture>
-		<colorkey>0</colorkey>
 	</default>
 	<default type="label">
 		<posx>80</posx>
@@ -174,9 +173,9 @@
 	</default>
 	<default type="textbox">
 		<posx>220</posx>
-		<posy>220</posy>
+		<posy>222</posy>
 		<width>410</width>
-		<height>215</height>
+		<height>213</height>
 		<textcolor>white</textcolor>
 		<font>font-20</font>
 	</default>

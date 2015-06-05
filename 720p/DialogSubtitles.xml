@@ -282,7 +282,7 @@
 				<width>220</width>
 				<height>35</height>
 				<label>$LOCALIZE[24120]</label>
-				<font>font-12</font>
+				<font>font13</font>
 				<aligny>center</aligny>
 				<textcolor>white</textcolor>
 				<selectedcolor>blue</selectedcolor>
@@ -319,7 +319,7 @@
 						<posy>0</posy>
 						<width>200</width>
 						<height>35</height>
-						<font>font-12</font>
+						<font>font13</font>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<selectedcolor>blue</selectedcolor>
@@ -349,7 +349,7 @@
 						<posy>0</posy>
 						<width>200</width>
 						<height>35</height>
-						<font>font-12</font>
+						<font>font13</font>
 						<aligny>center</aligny>
 						<textcolor>white</textcolor>
 						<selectedcolor>blue</selectedcolor>
@@ -391,6 +391,14 @@
 			<onright>120</onright>
 			<animation effect="slide" start="0,0" end="300,0" time="400" reversible="true" condition="Control.HasFocus(150) | Control.HasFocus(160) | Control.HasFocus(122)">Conditional</animation>
 			<visible>Control.IsVisible(150)</visible>
+		</control>
+		<control type="label" id="140">
+			<posx>50</posx>
+			<posy>460</posy>
+			<width>400</width>
+			<height>30</height>
+			<font>font-20</font>
+			<textcolor>white</textcolor>
 		</control>
 		<include>CommonFileCount14</include>
 		<control type="button" id="8999">

@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Transparency!
 # Addon id: skin.transparency
 # Addon Provider: ronie
@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"Last-Translator: Kodi Translation Team\n"
 "Language-Team: Catalan (http://www.transifex.com/projects/p/xbmc-skins/language/ca/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -117,12 +117,16 @@ msgid "REWIND"
 msgstr "REBOBINAR"
 
 msgctxt "#31046"
-msgid "Welcome to XBMC - Please Login"
-msgstr "Benvingut a XBMC - Si us plau, identifiquis"
+msgid "Welcome to Kodi - Please Login"
+msgstr "Benvingut a Kodi - Si us plau, identifiquis"
 
 msgctxt "#31047"
 msgid "Last logged in"
 msgstr "Identificat per darrera vegada el"
+
+msgctxt "#31048"
+msgid "Timers"
+msgstr "Temporitzador"
 
 msgctxt "#31050"
 msgid "Finish Time"
@@ -262,7 +266,7 @@ msgstr "Reproduir trèilers en pantalla complerta"
 
 msgctxt "#31150"
 msgid "Button label:"
-msgstr "Etiqueta del Butó:"
+msgstr "Etiqueta del botó:"
 
 msgctxt "#31151"
 msgid "Source name:"
@@ -286,11 +290,19 @@ msgstr "[B]CONFIGUREU ELS PARÀMETRES DE VÍDEO[/B][CR][CR]Gestioneu la bibliote
 
 msgctxt "#31174"
 msgid "Random Items"
-msgstr "Elements aleatoris"
+msgstr "Elements a l'atzar"
 
 msgctxt "#31175"
 msgid "Random"
-msgstr "Aleatori"
+msgstr "A l'atzar"
+
+msgctxt "#31178"
+msgid "Enable kiosk mode"
+msgstr "Activa el mode quiosc"
+
+msgctxt "#31193"
+msgid "TV recordings"
+msgstr "Enregistraments de TV"
 
 msgctxt "#31200"
 msgid "Custom add-on options"
@@ -323,6 +335,10 @@ msgstr "Afegides Recentment"
 msgctxt "#31411"
 msgid "Recently Played"
 msgstr "Vistes Recentment"
+
+msgctxt "#31601"
+msgid "Maps"
+msgstr "Mapes"
 
 msgctxt "#31701"
 msgid "Default"

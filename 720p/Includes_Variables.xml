@@ -80,6 +80,7 @@
 		<value condition="Player.Playing + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31042][/B]</value>
 		<value condition="[Player.Paused + !Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[31043][/B]</value>
 		<value condition="[Player.Paused + Player.Caching] + !Player.Seeking + !Player.DisplayAfterSeek">[B]$LOCALIZE[15107] $INFO[Player.CacheLevel]%[/B]</value>
+		<value condition="!IsEmpty(Player.SeekStepSize) + ![Player.Forwarding | Player.Rewinding]">[B]$INFO[Player.SeekStepSize][/B]</value>
 		<value condition="Player.Seeking">[B]$LOCALIZE[773] $INFO[Player.SeekOffset][/B]</value>
 		<value condition="Player.Rewinding2x + !Player.Seeking">[B]$LOCALIZE[31045] x2[/B]</value>
 		<value condition="Player.Rewinding4x + !Player.Seeking">[B]$LOCALIZE[31045] x4[/B]</value>
@@ -99,7 +100,7 @@
 	</variable>
 	<variable name="DialogVideoInfoLabel">
 		<value condition="!Control.IsVisible(50)">[UPPERCASE][B]$LOCALIZE[207]:[/B][/UPPERCASE]</value>
-		<value condition="Control.HasFocus(50)">[B]$INFO[Container(50).Listitem.Label][/B]</value>
+		<value condition="Control.HasFocus(50)">[B]$INFO[Container(50).Listitem.Label]$INFO[Container(50).Listitem.Label2, (,)][/B]</value>
 	</variable>
 	<variable name="HomePowerButton">
 		<value condition="!Control.HasFocus(20) + !Window.IsVisible(ShutdownMenu)">home-power.png</value>
@@ -379,11 +380,11 @@
 		<value condition="StringCompare(ListItem.Mpaa,ES:R16)">flags/movies/rating/spaR16.png</value>
 		<value condition="StringCompare(ListItem.Mpaa,ES:R18)">flags/movies/rating/spaR18.png</value>
 		<value condition="StringCompare(ListItem.Mpaa,ES:X)">flags/movies/rating/spaX.png</value>
-		<value condition="substring(ListItem.Mpaa,FSK0) | substring(ListItem.Mpaa,FSK 0) | substring(ListItem.Mpaa,FSK o.A.)">flags/movies/rating/fsk0.png</value>
-		<value condition="substring(ListItem.Mpaa,FSK6) | substring(ListItem.Mpaa,FSK 6)">flags/movies/rating/fsk6.png</value>
-		<value condition="substring(ListItem.Mpaa,FSK12) | substring(ListItem.Mpaa,FSK 12)">flags/movies/rating/fsk12.png</value>
-		<value condition="substring(ListItem.Mpaa,FSK16) | substring(ListItem.Mpaa,FSK 16)">flags/movies/rating/fsk16.png</value>
-		<value condition="substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)">flags/movies/rating/fsk18.png</value>
+		<value condition="substring(ListItem.Mpaa,Germany:0) | substring(ListItem.Mpaa,Germany:o.A) | substring(ListItem.Mpaa,FSK0) | substring(ListItem.Mpaa,FSK 0) | substring(ListItem.Mpaa,FSK o.A)">flags/movies/rating/fsk0.png</value>
+		<value condition="substring(ListItem.Mpaa,Germany:6) | substring(ListItem.Mpaa,FSK6) | substring(ListItem.Mpaa,FSK 6)">flags/movies/rating/fsk6.png</value>
+		<value condition="substring(ListItem.Mpaa,Germany:12) | substring(ListItem.Mpaa,FSK12) | substring(ListItem.Mpaa,FSK 12)">flags/movies/rating/fsk12.png</value>
+		<value condition="substring(ListItem.Mpaa,Germany:16) | substring(ListItem.Mpaa,FSK16) | substring(ListItem.Mpaa,FSK 16)">flags/movies/rating/fsk16.png</value>
+		<value condition="substring(ListItem.Mpaa,Germany:18) | substring(ListItem.Mpaa,FSK18) | substring(ListItem.Mpaa,FSK 18)">flags/movies/rating/fsk18.png</value>
 		<value condition="substring(Listitem.mpaa,French:U)">flags/movies/rating/csaU.png</value>
 		<value condition="substring(Listitem.mpaa,French:-10)">flags/movies/rating/csa10.png</value>
 		<value condition="substring(Listitem.mpaa,French:-12)">flags/movies/rating/csa12.png</value>
@@ -456,11 +457,11 @@
 		<value condition="StringCompare(VideoPlayer.Mpaa,ES:R16)">flags/movies/rating/spaR16.png</value>
 		<value condition="StringCompare(VideoPlayer.Mpaa,ES:R18)">flags/movies/rating/spaR18.png</value>
 		<value condition="StringCompare(VideoPlayer.Mpaa,ES:X)">flags/movies/rating/spaX.png</value>
-		<value condition="substring(VideoPlayer.Mpaa,FSK0) | substring(VideoPlayer.Mpaa,FSK 0) | substring(VideoPlayer.Mpaa,FSK o.A.)">flags/movies/rating/fsk0.png</value>
-		<value condition="substring(VideoPlayer.Mpaa,FSK6) | substring(VideoPlayer.Mpaa,FSK 6)">flags/movies/rating/fsk6.png</value>
-		<value condition="substring(VideoPlayer.Mpaa,FSK12) | substring(VideoPlayer.Mpaa,FSK 12)">flags/movies/rating/fsk12.png</value>
-		<value condition="substring(VideoPlayer.Mpaa,FSK16) | substring(VideoPlayer.Mpaa,FSK 16)">flags/movies/rating/fsk16.png</value>
-		<value condition="substring(VideoPlayer.Mpaa,FSK18) | substring(VideoPlayer.Mpaa,FSK 18)">flags/movies/rating/fsk18.png</value>
+		<value condition="substring(VideoPlayer.Mpaa,Germany:0) | substring(VideoPlayer.Mpaa,Germany:Germany:o.A) | substring(VideoPlayer.Mpaa,FSK0) | substring(VideoPlayer.Mpaa,FSK 0) | substring(VideoPlayer.Mpaa,FSK o.A)">flags/movies/rating/fsk0.png</value>
+		<value condition="substring(VideoPlayer.Mpaa,Germany:6) | substring(VideoPlayer.Mpaa,FSK6) | substring(VideoPlayer.Mpaa,FSK 6)">flags/movies/rating/fsk6.png</value>
+		<value condition="substring(VideoPlayer.Mpaa,Germany:12) | substring(VideoPlayer.Mpaa,FSK12) | substring(VideoPlayer.Mpaa,FSK 12)">flags/movies/rating/fsk12.png</value>
+		<value condition="substring(VideoPlayer.Mpaa,Germany:16) | substring(VideoPlayer.Mpaa,FSK16) | substring(VideoPlayer.Mpaa,FSK 16)">flags/movies/rating/fsk16.png</value>
+		<value condition="substring(VideoPlayer.Mpaa,Germany:18) | substring(VideoPlayer.Mpaa,FSK18) | substring(VideoPlayer.Mpaa,FSK 18)">flags/movies/rating/fsk18.png</value>
 		<value condition="substring(VideoPlayer.mpaa,French:U)">flags/movies/rating/csaU.png</value>
 		<value condition="substring(VideoPlayer.mpaa,French:-10)">flags/movies/rating/csa10.png</value>
 		<value condition="substring(VideoPlayer.mpaa,French:-12)">flags/movies/rating/csa12.png</value>
@@ -644,12 +645,17 @@
 		<value condition="Control.HasFocus(606)">$LOCALIZE[13012] Kodi</value>
 		<value condition="Control.HasFocus(607)">$LOCALIZE[13313] Kodi</value>
 		<value condition="Control.HasFocus(608)">$LOCALIZE[13005]</value>
-		<value condition="Control.HasFocus(609)">$LOCALIZE[13011]</value>
-		<value condition="Control.HasFocus(610)">$LOCALIZE[13010]</value>
-		<value condition="Control.HasFocus(611)">$LOCALIZE[1036]</value>
-		<value condition="Control.HasFocus(612)">$LOCALIZE[13013]</value>
-		<value condition="Control.HasFocus(613)">$LOCALIZE[5]</value>
-		<value condition="Control.HasFocus(614)">$LOCALIZE[13391] $LOCALIZE[155]</value>
+		<value condition="Control.HasFocus(609)">$LOCALIZE[20150]</value>
+		<value condition="Control.HasFocus(610)">$LOCALIZE[13011]</value>
+		<value condition="Control.HasFocus(611)">$LOCALIZE[13010]</value>
+		<value condition="Control.HasFocus(612)">$LOCALIZE[1036]</value>
+		<value condition="Control.HasFocus(613)">$LOCALIZE[13013]</value>
+		<value condition="Control.HasFocus(614)">$LOCALIZE[5]</value>
+		<value condition="Control.HasFocus(615)">$LOCALIZE[13391] $LOCALIZE[155]</value>
+	</variable>
+	<variable name="SkinSettingsShutdownImageTimer">
+		<value condition="Skin.HasSetting(Hide_Shutdown_Master)">shut-timer-focus.png</value>
+		<value condition="!Skin.HasSetting(Hide_Shutdown_Master)">shut-timer-nofocus.png</value>
 	</variable>
 	<variable name="SkinSettingsShutdownImageMaster">
 		<value condition="Skin.HasSetting(Hide_Shutdown_Master)">shut-master-focus.png</value>

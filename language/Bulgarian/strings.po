@@ -1,4 +1,4 @@
-# XBMC Media Center language file
+# Kodi Media Center language file
 # Addon Name: Transparency!
 # Addon id: skin.transparency
 # Addon Provider: ronie
@@ -8,7 +8,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: alanwww1@xbmc.org\n"
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: XBMC Translation Team\n"
+"Last-Translator: Kodi Translation Team\n"
 "Language-Team: Bulgarian (http://www.transifex.com/projects/p/xbmc-skins/language/bg/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -58,7 +58,7 @@ msgstr "Музикална библиотека"
 
 msgctxt "#31030"
 msgid "Fanart"
-msgstr "Fanart"
+msgstr "Фен-арт"
 
 msgctxt "#31031"
 msgid "Full list"
@@ -93,8 +93,12 @@ msgid "REWIND"
 msgstr "ПРЕВЪРТАНЕ НАЗАД"
 
 msgctxt "#31046"
-msgid "Welcome to XBMC - Please Login"
-msgstr "Добре дошли в XBMC! Моля, влезте"
+msgid "Welcome to Kodi - Please Login"
+msgstr "Добре дошли в Kodi! Моля, влезте"
+
+msgctxt "#31048"
+msgid "Timers"
+msgstr "Броячи"
 
 msgctxt "#31052"
 msgid "IMDB"
@@ -148,6 +152,10 @@ msgctxt "#31114"
 msgid "Multi Image"
 msgstr "Няколко картини"
 
+msgctxt "#31125"
+msgid "Enable cdArt"
+msgstr "Включи CDArt"
+
 msgctxt "#31139"
 msgid "Use posters"
 msgstr "Ползвай плакати"
@@ -156,29 +164,57 @@ msgctxt "#31156"
 msgid "Favourite"
 msgstr "Любими"
 
+msgctxt "#31158"
+msgid "Change Your Settings..."
+msgstr "Променете настройките..."
+
 msgctxt "#31164"
 msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR]Setup and calibrate displays - Configure audio output - Setup remote controls[CR]Set power saving options - Enable debugging - Setup master lock"
 msgstr "[B]КОНФИГУРИРАЙТЕ СИСТЕМАТА[/B][CR]Настройте и калибрирайте екраните - Конфигурирайте аудио изхода - Настройте дистанционните[CR]Настройте компютъра да пести енергия - Включете режима \"дебъг\" - Задайте код за заключване"
 
 msgctxt "#31166"
-msgid "[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your XBMC user Profile[CR]to login and continue"
-msgstr "[B]КОНФИГУРИРАЙТЕ ПРОФИЛИТЕ[/B][CR]Изберете профил за XBMC,[CR]за да продължите"
+msgid "[B]CONFIGURE PROFILE SETTINGS[/B][CR]Select your Kodi user Profile[CR]to login and continue"
+msgstr "[B]КОНФИГУРИРАЙТЕ ПРОФИЛИТЕ[/B][CR]Изберете профил за Kodi,[CR]за да продължите"
+
+msgctxt "#31172"
+msgid "Use extra fanart"
+msgstr "Ползвай допълнителен фен-арт"
+
+msgctxt "#31173"
+msgid "Use extra thumbs"
+msgstr "Ползвай допълнителни миниатюри"
 
 msgctxt "#31174"
 msgid "Random Items"
-msgstr "Случаено"
+msgstr "Произволно"
 
 msgctxt "#31175"
 msgid "Random"
-msgstr "Случаен"
+msgstr "Произволно"
 
 msgctxt "#31178"
 msgid "Enable kiosk mode"
-msgstr "Включи kiosk режим"
+msgstr "Включи kiosk режима"
+
+msgctxt "#31188"
+msgid "Recommended Items"
+msgstr "Препоръчаните елементи"
+
+msgctxt "#31191"
+msgid "TV guide"
+msgstr "ТВ справочник"
+
+msgctxt "#31193"
+msgid "TV recordings"
+msgstr "Записи от ТВ"
 
 msgctxt "#31215"
 msgid "Hide GlobalSearch button"
 msgstr "Без бутона \"Общо търсене\""
+
+msgctxt "#31216"
+msgid "Extras"
+msgstr "Екстри"
 
 msgctxt "#31219"
 msgid "Logo"
@@ -188,9 +224,17 @@ msgctxt "#31220"
 msgid "ClearArt"
 msgstr "Изчистено изображение"
 
+msgctxt "#31221"
+msgid "Extra Fanart"
+msgstr "Допълнителен фен-арт"
+
 msgctxt "#31223"
 msgid "Update rating"
-msgstr "Обнови рейтинга"
+msgstr "Обнови оценката"
+
+msgctxt "#31224"
+msgid "Extra Thumbs"
+msgstr "Допълнителни миниатюри"
 
 msgctxt "#31410"
 msgid "Recently Added"
@@ -199,6 +243,10 @@ msgstr "Последно добавени"
 msgctxt "#31411"
 msgid "Recently Played"
 msgstr "Последно възпроизвеждани"
+
+msgctxt "#31601"
+msgid "Maps"
+msgstr "Карти"
 
 msgctxt "#31701"
 msgid "Default"

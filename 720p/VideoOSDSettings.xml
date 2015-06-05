@@ -40,7 +40,7 @@
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font-32</font>
-				<label>20333</label>
+				<label>-</label>
 				<textcolor>blue</textcolor>
 			</control>
 			<control type="image">
@@ -120,6 +120,13 @@
 			<description>Default Seperator</description>
 			<height>2</height>
 			<texture>separator.png</texture>
+		</control>
+		<control type="label" id="14">
+			<description>Default Label</description>
+			<height>30</height>
+			<font>font-20</font>
+			<textcolor>white</textcolor>
+			<align>center</align>
 		</control>
 	</controls>
 </window>

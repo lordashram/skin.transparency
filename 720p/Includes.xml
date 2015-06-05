@@ -1176,9 +1176,9 @@
 	</include>
 	<include name="CommonFileCount14">
 		<control type="grouplist">
-			<posx>250</posx>
+			<posx>450</posx>
 			<posy>460</posy>
-			<width>500</width>
+			<width>300</width>
 			<height>30</height>
 			<align>right</align>
 			<orientation>horizontal</orientation>
@@ -1191,20 +1191,6 @@
 				<font>font-20</font>
 				<textcolor>white</textcolor>
 				<label>$LOCALIZE[31024] $INFO[Container(120).CurrentPage]/$INFO[Container(120).NumPages]</label>
-			</control>
-			<control type="image">
-				<width>29</width>
-				<height>30</height>
-				<texture>dot.png</texture>
-			</control>
-			<control type="label">
-				<description>Item Count Label</description>
-				<width min="10" max="250">auto</width>
-				<height>30</height>
-				<aligny>center</aligny>
-				<font>font-20</font>
-				<textcolor>white</textcolor>
-				<label>$INFO[Container(120).NumItems] $LOCALIZE[31025]</label>
 			</control>
 		</control>
 	</include>
@@ -1612,19 +1598,9 @@
 		<aligny>center</aligny>
 		<font>font-20</font>
 	</include>
-	<include name="Logo">
-    <control type="image">
-    <posx>15</posx>
-    <posy>2</posy>
-    <width>100</width>
-    <height>50</height>
-    <texture>kodi-logo.png</texture>
-    </control>
-  </include>
 	<include name="MusicPlayerAlbum">
 		<font>font-40</font>
 		<textcolor>99999999</textcolor>
-		<font>font-160</font>
 		<scroll>true</scroll>
 		<scrollsuffix/>
 		<label>$INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     $INFO[MusicPlayer.Album]     </label>
@@ -1752,96 +1728,112 @@
 		</control>
 	</include>
 	<include name="PVR-Menu">
-		<control type="button" id="901">
-			<description>Channels</description>
-			<posx>0</posx>
-			<posy>135</posy>
-			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[19019]</label>
-			<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
-			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
-			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
-			<onup condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">28</onup>
-			<onup condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">3</onup>
-			<ondown>902</ondown>
-			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
-			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
-		</control>
-		<control type="button" id="902">
-			<description>Guide</description>
-			<posx>0</posx>
-			<posy>180</posy>
-			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[22020]</label>
-			<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
-			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
-			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
-			<onup>901</onup>
-			<ondown>903</ondown>
-			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
-			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
-		</control>
-		<control type="button" id="903">
-			<description>Recordings</description>
-			<posx>0</posx>
-			<posy>225</posy>
-			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[19163]</label>
-			<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
-			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
-			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
-			<onup>902</onup>
-			<ondown>904</ondown>
-			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
-			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
-		</control>
-		<control type="button" id="904">
-			<description>Search</description>
-			<posx>0</posx>
-			<posy>270</posy>
-			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[137]</label>
-			<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
-			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
-			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
-			<onup>903</onup>
-			<ondown>905</ondown>
-			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
-			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
-		</control>
-		<control type="button" id="905">
-			<description>Timers</description>
-			<posx>0</posx>
-			<posy>315</posy>
-			<include>ButtonCommonValues</include>
-			<label>$LOCALIZE[31048]</label>
-			<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
-			<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
-			<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
-			<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
-			<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
-			<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
-			<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
-			<onup>904</onup>
-			<ondown>2</ondown>
-			<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
-			<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+		<control type="group">
+			<animation effect="slide" end="0,-45" time="0" condition="[Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)] + !Control.IsVisible(6)">Conditional</animation>
+			<animation effect="slide" end="0,45" time="0" condition="[Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)] + Control.IsVisible(7)">Conditional</animation>
+			<control type="button" id="901">
+				<description>Channels</description>
+				<posx>0</posx>
+				<posy>135</posy>
+				<include>ButtonCommonValues</include>
+				<label>$LOCALIZE[19019]</label>
+				<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
+				<animation effect="slide" end="0,90" time="0" condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">Conditional</animation>
+				<animation effect="slide" end="0,45" time="0" condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">Conditional</animation>
+				<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
+				<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+				<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
+				<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
+				<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
+				<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+				<onup condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">6</onup>
+				<onup condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">28</onup>
+				<onup condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)]">3</onup>
+				<onup condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">7</onup>
+				<ondown>902</ondown>
+				<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVChannels)</onclick>
+				<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioChannels)</onclick>
+			</control>
+			<control type="button" id="902">
+				<description>Guide</description>
+				<posx>0</posx>
+				<posy>180</posy>
+				<include>ButtonCommonValues</include>
+				<label>$LOCALIZE[22020]</label>
+				<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
+				<animation effect="slide" end="0,90" time="0" condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">Conditional</animation>
+				<animation effect="slide" end="0,45" time="0" condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">Conditional</animation>
+				<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
+				<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+				<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
+				<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
+				<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
+				<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+				<onup>901</onup>
+				<ondown>903</ondown>
+				<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVGuide)</onclick>
+				<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioGuide)</onclick>
+			</control>
+			<control type="button" id="903">
+				<description>Recordings</description>
+				<posx>0</posx>
+				<posy>225</posy>
+				<include>ButtonCommonValues</include>
+				<label>$LOCALIZE[19163]</label>
+				<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
+				<animation effect="slide" end="0,90" time="0" condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">Conditional</animation>
+				<animation effect="slide" end="0,45" time="0" condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">Conditional</animation>
+				<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
+				<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+				<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
+				<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
+				<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
+				<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+				<onup>902</onup>
+				<ondown>904</ondown>
+				<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVRecordings)</onclick>
+				<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioRecordings)</onclick>
+			</control>
+			<control type="button" id="904">
+				<description>Search</description>
+				<posx>0</posx>
+				<posy>270</posy>
+				<include>ButtonCommonValues</include>
+				<label>$LOCALIZE[137]</label>
+				<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
+				<animation effect="slide" end="0,90" time="0" condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">Conditional</animation>
+				<animation effect="slide" end="0,45" time="0" condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">Conditional</animation>
+				<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
+				<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+				<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
+				<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
+				<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
+				<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+				<onup>903</onup>
+				<ondown>905</ondown>
+				<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVSearch)</onclick>
+				<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioSearch)</onclick>
+			</control>
+			<control type="button" id="905">
+				<description>Timers</description>
+				<posx>0</posx>
+				<posy>315</posy>
+				<include>ButtonCommonValues</include>
+				<label>$LOCALIZE[31048]</label>
+				<animation effect="slide" end="0,-45" time="0" condition="![Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)]">Conditional</animation>
+				<animation effect="slide" end="0,90" time="0" condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels)">Conditional</animation>
+				<animation effect="slide" end="0,45" time="0" condition="Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">Conditional</animation>
+				<onleft condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onleft>
+				<onright condition="Window.IsVisible(TVChannels) | Window.IsVisible(RadioChannels) | Window.IsVisible(TVRecordings) | Window.IsVisible(RadioRecordings)">50</onright>
+				<onleft condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onleft>
+				<onright condition="Window.IsVisible(TVGuide) | Window.IsVisible(RadioGuide)">10</onright>
+				<onleft condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onleft>
+				<onright condition="Window.IsVisible(TVSearch) | Window.IsVisible(RadioSearch) | Window.IsVisible(TVTimers) | Window.IsVisible(RadioTimers)">52</onright>
+				<onup>904</onup>
+				<ondown>2</ondown>
+				<onclick condition="IsEmpty(Window.Property(IsRadio))">ActivateWindow(TVTimers)</onclick>
+				<onclick condition="!IsEmpty(Window.Property(IsRadio))">ActivateWindow(RadioTimers)</onclick>
+			</control>
 		</control>
 	</include>
 	<include name="QlockHome">
